@@ -13,7 +13,10 @@ packages:
       darwin: apple-darwin
     files:
       - name: ghcup
-        src: "{{.Arch}}-{{.OS}}-ghcup-{{trimV .Version}}"
+    overrides:
+      - goos: windows
+        url: https://downloads.haskell.org/~ghcup/{{trimV .Version}}/{{.Arch}}-mingw64-ghcup-{{trimV .Version}}.exe
     supported_envs:
       - linux
       - darwin
+      - windows/amd64
