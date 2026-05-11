@@ -15,4 +15,3 @@
 ## License
 
 [MIT](LICENSE)
-
