@@ -11,6 +11,7 @@ packages:
       arm64: aarch64
       amd64: x86_64
       darwin: apple-darwin
+    windows_arm_emulation: true
     files:
       - name: ghcup
     overrides:
